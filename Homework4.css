@@ -1,0 +1,195 @@
+/*
+Program: Hw4.html
+Author: Zach Qi
+Date: 2026/05/08
+Description: Patient Registration Form
+*/
+
+body{
+    background-color:rgb(208, 159, 99) ;
+}
+
+h1{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(208, 159, 99) ;
+    color: rgb(96, 112, 112);
+    font-size: 36px;
+    font-weight: bold;
+    transition: background-color 0.4s ease-in-out;
+    font-family: "Optima", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    z-index: 1000;
+}
+header.scolled {
+    background-color: rgb(208, 159, 99) ;
+    opacity: 1.0;
+}
+
+p{
+    color: rgb(96, 112, 112);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto 0;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.pwd-message {
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+.match {
+    color: green;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.nomatch {
+    color: red;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+table.output,
+tr.output,
+td.output {
+    width: 500px;
+    background-color: rgb(81, 58, 29);
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: rgb(96, 112, 112);
+}
+
+td.outputdata {
+    width: 500px;
+    background-color: rgb(208, 159, 99);
+    padding: 10px;
+    border-spacing: 2px;
+}
+
+.slider-container {
+    width: 100px;
+}
+
+#range-slider {
+    width: 50%;
+}
+
+#slider-output {
+    display: block;
+    width: 72%;
+    text-align: center;
+    margin-top: 5px;
+}
+#alert-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+
+#alert-content {
+    background-color: #3965b7;
+    border-radius: 10px;
+    width: 300px;
+    height: 130px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 30px;
+    text-align: center;
+}
+
+#alert-content h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+#close-alert {
+    background-color:rgb(253, 253, 253);
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(96, 112, 104);
+    border-color: rgb(96, 112, 104);
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "optima", sans-serif;
+}
+
+/*iframe styling */
+•iframe-container {
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.iframe-container iframe{
+    width: 95%;
+    height: 80%;
+    border: 1px solid black;
+}
+/* Cookie welcome message styling*/
+#welcome1 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+#welcome2 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
